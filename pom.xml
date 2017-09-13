@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>net.moopa.cc</groupId>
+  <artifactId>cc-all</artifactId>
+  <version>1.0.0</version>
+    <modules>
+        <module>cc-common</module>
+        <module>cc-server</module>
+      <module>cc-client</module>
+      <module>cc-callingservice</module>
+    </modules>
+    <packaging>pom</packaging>
+
+  <name>cc-all</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <junit.version>4.12</junit.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <!--<resources>-->
+    <!--<resource>-->
+    <!--<directory>src/main/resources</directory>-->
+    <!--<filtering>false</filtering>-->
+    <!--</resource>-->
+    <!--</resources>-->
+    <plugins>
+      <!--用于多项目打包-->
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <finalName>cc</finalName>
+          <descriptors>
+            <descriptor>release-cc-server.xml</descriptor>
+            <descriptor>release-cc-client.xml</descriptor>
+          </descriptors>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
