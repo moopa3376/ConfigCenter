@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 cd ../lib
-sh ../bin/runserver.sh net.moopa.cc.client.DemoClient
+sh ../bin/runserver.sh net.moopa3376.cc.client.DemoClient
