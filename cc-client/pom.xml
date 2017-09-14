@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>cc-all</artifactId>
-        <groupId>net.moopa.cc</groupId>
+        <groupId>net.moopa3376.cc</groupId>
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -29,15 +29,15 @@
         </dependency>
 
         <dependency>
-            <groupId>net.leeautumn</groupId>
+            <groupId>net.moopa3376.calling</groupId>
             <artifactId>calling-client</artifactId>
-            <version>1.0.2</version>
+            <version>${calling.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>net.moopa.cc</groupId>
+            <groupId>net.moopa3376.cc</groupId>
             <artifactId>cc-callingservice</artifactId>
-            <version>1.0.0</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 </project>
