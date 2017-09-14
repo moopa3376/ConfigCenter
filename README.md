@@ -16,7 +16,6 @@ modules:
 * cc-callingservice
 
   This module contains config service interface and its implement.  
-  You can add config via adding an interface like interface MyBlogConfig and its implments.
   
 * cc-common
 
