@@ -43,7 +43,7 @@
     <moduleSets>
         <moduleSet>
             <includes>
-                <include>net.moopa.cc:cc-client</include>
+                <include>net.moopa3376.cc:cc-client</include>
             </includes>
             <binaries>
                 <outputDirectory>lib/</outputDirectory>

@@ -43,9 +43,9 @@
     <moduleSets>
         <moduleSet>
             <includes>
-                <include>net.moopa.cc:cc-common</include>
-                <include>net.moopa.cc:cc-server</include>
-                <include>net.moopa.cc:cc-callingservice</include>
+                <include>net.moopa3376.cc:cc-common</include>
+                <include>net.moopa3376.cc:cc-server</include>
+                <include>net.moopa3376.cc:cc-callingservice</include>
             </includes>
             <binaries>
                 <outputDirectory>lib/</outputDirectory>
