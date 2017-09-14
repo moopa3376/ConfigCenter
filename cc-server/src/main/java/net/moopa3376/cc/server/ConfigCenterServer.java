@@ -1,6 +1,6 @@
 package net.moopa3376.cc.server;
 
-import net.moopa.calling.servicesrv.CallingServiceServer;
+import net.moopa3376.calling.servicesrv.CallingServiceServer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

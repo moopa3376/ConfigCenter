@@ -3,7 +3,7 @@ package net.moopa3376.cc.client;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-import net.moopa.calling.client.ClientFactory;
+import net.moopa3376.calling.client.ClientFactory;
 import net.moopa3376.cc.callingservices.impl.ConfigServiceImpl;
 import net.moopa3376.cc.callingservices.services.ConfigService;
 
