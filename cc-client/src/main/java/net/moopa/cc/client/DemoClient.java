@@ -4,8 +4,8 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 import net.leeautumn.client.ClientFactory;
-import net.moopa.cc.callingservices.impl.MyBlogConfigServiceImpl;
-import net.moopa.cc.callingservices.services.MyBlogConfigService;
+import net.moopa.cc.callingservices.impl.ConfigServiceImpl;
+import net.moopa.cc.callingservices.services.ConfigService;
 
 /**
  * @autuor Moopa
@@ -15,8 +15,8 @@ import net.moopa.cc.callingservices.services.MyBlogConfigService;
 public class DemoClient {
 
 	public static void main(String[] args) throws UnknownHostException {
-		MyBlogConfigService myBlogConfigService = ClientFactory.newClient(MyBlogConfigServiceImpl.class, InetAddress.getByName(CcClientConfigs.get("cc-server.address",null)),Integer.parseInt(CcClientConfigs.get("cc-server.port",null)));
-		String s = myBlogConfigService.getMyBlogConfig("MY_BLOG_NAME",null);
+		ConfigService configService = ClientFactory.newClient(ConfigServiceImpl.class, InetAddress.getByName(CcClientConfigs.get("cc-server.address",null)),Integer.parseInt(CcClientConfigs.get("cc-server.port",null)));
+		String s = configService.getConfig("MY_BLOG","MY_BLOG_NAME",null);
 		System.out.println(s == null);
 		System.out.println(s);
 	}
